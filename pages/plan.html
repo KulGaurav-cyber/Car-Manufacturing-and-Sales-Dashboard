@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Planning</title>
+    <link rel="stylesheet" href="plan.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>New Vehicle Planning</h1>
+            <p>Enter PRD and specifications for the new vehicle.</p>
+        </header>
+        
+        <form id="carPlanningForm">
+            <div class="form-section">
+                <label for="modelName">Model Name:</label>
+                <input type="text" id="modelName" name="modelName" required>
+            </div>
+            
+            <div class="form-section">
+                <label for="prd">Product Requirements Document (PRD):</label>
+                <textarea id="prd" name="prd" rows="6" required></textarea>
+            </div>
+            
+            <div class="form-section">
+                <label for="specs">Specifications:</label>
+                <textarea id="specs" name="specs" rows="6" required></textarea>
+            </div>
+            
+            <button type="submit">Submit Plan</button>
+        </form>
+        
+        <footer>
+            <p>&copy; 2024 Car Manufacturing Company</p>
+        </footer>
+    </div>
+    
+    <script src="plan.js"></script>
+</body>
+</html>

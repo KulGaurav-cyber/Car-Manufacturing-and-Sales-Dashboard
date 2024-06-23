@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Market Research</title>
+    <link rel="stylesheet" href="marketres.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Car Market Research Survey</h1>
+            <p>Your insights will drive the future of our vehicles.</p>
+        </header>
+        
+        <form id="marketResearchForm">
+            <div class="form-section">
+                <h2>B2C Online Engagement</h2>
+                <label for="online-platforms">Preferred Online Platforms:</label>
+                <select multiple id="online-platforms">
+                    <option value="website">Website</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="email">Email</option>
+                    <option value="apps">Apps</option>
+                </select>
+            </div>
+            
+            <div class="form-section">
+                <h2>Interviews</h2>
+                <label for="interview-preference">Interview Preferences:</label>
+                <select id="interview-preference">
+                    <option value="in-person">In-Person</option>
+                    <option value="virtual">Virtual</option>
+                </select>
+            </div>
+            
+            <div class="form-section">
+                <h2>Public Data</h2>
+                <p>Do you consent to the use of public data for research?</p>
+                <input type="radio" id="public-data-yes" name="public-data" value="yes">
+                <label for="public-data-yes">Yes</label>
+                <input type="radio" id="public-data-no" name="public-data" value="no">
+                <label for="public-data-no">No</label>
+            </div>
+            
+            <div class="form-section">
+                <h2>Health Considerations</h2>
+                <label for="health-features">Important Health Features:</label>
+                <select multiple id="health-features">
+                    <option value="air-quality">Air Quality Control</option>
+                    <option value="ergonomics">Ergonomics</option>
+                    <option value="fitness-tracking">Fitness Tracking</option>
+                </select>
+            </div>
+            
+            <button type="submit">Submit Responses</button>
+        </form>
+        
+        <footer>
+            <p>Thank you for participating in our survey!</p>
+        </footer>
+    </div>
+    
+    <script src="marketres.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Manufacturing Process</title>
+    <link rel="stylesheet" href="carmf.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Car Manufacturing Setup</h1>
+            <p>Specify material choices and production details.</p>
+        </header>
+        
+        <form id="manufacturingForm">
+            <div class="form-section">
+                <label for="material">Select Material:</label>
+                <select id="material">
+                    <option value="aluminum">Aluminum</option>
+                    <option value="steel">Steel</option>
+                    <option value="carbon-fiber">Carbon Fiber</option>
+                </select>
+            </div>
+            
+            <div class="form-section">
+                <label for="production-line">Production Line Type:</label>
+                <select id="production-line">
+                    <option value="automated">Automated</option>
+                    <option value="manual">Manual</option>
+                </select>
+            </div>
+            
+            <div class="form-section">
+                <label for="quantity">Production Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="100">
+            </div>
+            
+            <button type="submit">Submit Manufacturing Details</button>
+        </form>
+        
+        <footer>
+            <p>&copy; 2024 Car Manufacturing Company</p>
+        </footer>
+    </div>
+    
+    <script src="carmf.js"></script>
+</body>
+</html>
